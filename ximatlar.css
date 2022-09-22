@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  width: 100%;
+  height: 56px;
+  box-shadow: 0px 4px 20px 0px #4e4c4c;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.nav {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+}
+
+.nav-ul {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 20px 0; */
+  width: 50%;
+  position: relative;
+  margin-left: 300px;
+  margin-top: 15px;
+}
+
+.nav_ul_list {
+  list-style-type: none;
+}
+
+.logo {
+  position: relative;
+  top: -4px;
+}
+
+.link {
+  width: 100px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.btn {
+  position: relative;
+  width: 160px;
+  height: 40px;
+  border: none;
+  color: white;
+  background: #00bafc;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: white;
+  border: 3px solid #00bafc;
+  color: #00bafc;
+}
+
+.btn:active {
+  background: rgba(0, 186, 252, 0.6);
+  border-radius: 5px;
+  color: white;
+  border: none;
+}
+
+.link::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: rgb(103, 2, 2);
+  display: inline-block;
+  margin-bottom: -29px;
+  opacity: 0;
+}
+
+.link:hover::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #060505;
+  display: inline-block;
+  margin-bottom: -5px;
+  opacity: 1;
+}
+
+.dropbtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  margin-left: -40px;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 40px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background: #00bafc;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:active {
+  background: #00bafc;
+  opacity: 0.6;
+}
+
+.hero {
+  margin: 110px 0;
+  width: 100%;
+  height: 418px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.vid {
+  width: 458px;
+  height: 258px;
+}
+
+.hero_des {
+  margin-left: -50px;
+  padding: 0 50px;
+  width: 640px;
+  height: 224px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.tel {
+  width: 168px;
+  height: 40px;
+  border-radius: 5px;
+  background: #00bafc;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tel:hover {
+  background-color: white;
+  border: 3px solid #00bafc;
+  color: #00bafc;
+}
+
+.tel:active {
+  background: rgba(0, 186, 252, 0.6);
+  border-radius: 5px;
+  color: white;
+}
+
+.xizmatlar {
+  width: 1100px;
+  padding: 72px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.xizmatlar p {
+  text-align: center;
+  width: 790px;
+  height: 72px;
+  line-height: 20px;
+  color: #000000;
+  text-align: center;
+}
+
+#servises {
+  background: #F4F4F4;
+}
+
+.card-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 32px;
+  gap: 40px;
+  width: 804px;
+  height: 378px;
+  background: #ffffff;
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  margin: 32px 0px;
+}
+
+.card-img {
+  width: 200px;
+  height: 128.21px;
+}
+.card-dess{
+  line-height: 20px;
+  margin: 16px 0;
+}
+.card-desx{
+  line-height: 20px;
+  margin: 16px 0;
+}
+.card-desh{
+  line-height: 20px;
+  margin: 16px 0;
+}
+.card-des p {
+  width: 500px;
+  height: 48px;
+  line-height: 24px;
+  margin: 16px 0;
+}
+.card-ul{
+  line-height: 30px;
+}
+.card-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8px 16px;
+  width: 167px;
+  height: 40px;
+  background: #00BAFC;
+  border-radius: 5px;
+  display: inline-block;
+  align-items: center;
+  color:#fff;
+  margin: 16px 16px 0px 0px ;
+}
+
+.card-btn:hover{
+  background: #00b9fcb8;
+}
+.card-btn:active{
+  background: #00b9fc73;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 32px;
+  width: 804px;
+  height: 378px;
+  background: #ffffff;
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  margin: 32px 0px;
+}
+
+
+#order {
+  background-color: #00bafc;
+  width: 100%;
+  height: 548px;
+  margin-top: 45px;
+}
+.title-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 56px 100px;
+  color: #fff;
+}
+.title-form p {
+  width: 719px;
+  height: 48px;
+  text-align: center;
+}
+.wrap-form {
+  background-color: white;
+  width: 345px;
+  height: 304px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+#name {
+  width: 300px;
+  height: 56px;
+  background-color: #f3f3f3;
+  padding: 5px 15px;
+  margin: 0 auto;
+}
+#tel-number {
+  width: 300px;
+  height: 56px;
+  background-color: #f3f3f3;
+  padding: 5px 30px;
+  margin: 10px auto;
+}
+#text-s {
+  width: 300px;
+  height: 56px;
+  background-color: #f3f3f3;
+  margin: 10px auto;
+}
+.butn {
+  width: 167px;
+  height: 40px;
+  color: white;
+  margin: 0 70px;
+  border: none;
+  background: #00bafc;
+  border-radius: 5px;
+}
+header{
+  background-color: white;
+}
+#order{
+  margin-top: -10px;
+  position: relative;
+}
+
+#men{
+  margin: 0 22px;
+}
+
+.footer-div> ul > li> a{
+  color: white;
+}
+.footer-wrp {
+  display: flex;
+  align-items: flex-start;
+  color:white;
+}
+.footer-div {
+  margin: 56px 0 0 100px;
+}
+.ho:hover{
+  color: #00BAFC;
+}
+.ho:active{
+  color:  #00BAFC;
+  opacity: 0.6;;
+}
+.hover:hover{
+  color: #00BAFC;
+}
+.hover:active{
+  color:  #00BAFC;
+  opacity: 0.6;;
+}
+.hov:hover{
+  color: #00BAFC;
+}
+.hov:active{
+  color:  #00bafc;
+  opacity: 0.6;;
+}
+.parag {
+  width: 310px;
+}
+footer {
+  background-color: #191919;
+  width: 100%;
+  color:white;
+  height: 338px;
+}
